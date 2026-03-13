@@ -41,15 +41,6 @@ Open **Plugins → System - Session Guard**:
 - AJAX endpoint (called by JS):
   - `index.php?option=com_ajax&plugin=sessionguard&group=system&format=raw&{token}=1`
 
-## Troubleshooting
-
-- **No JS/CSS requests in Network tab**
-  - Confirm the plugin is **enabled**
-  - Confirm you are **logged in** (plugin only injects for authenticated users)
-  - Confirm these exist on the target site:
-    - `media/plg_system_sessionguard/css/sessionguard.css`
-    - `media/plg_system_sessionguard/js/sessionguard.js`
-
 ## License
 
 See `LICENSE`.
