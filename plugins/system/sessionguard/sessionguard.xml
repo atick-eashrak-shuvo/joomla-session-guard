@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_sessionguard</name>
+	<author>Custom Development</author>
+	<creationDate>2026-03-05</creationDate>
+	<copyright>Copyright (C) 2026. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_SESSIONGUARD_XML_DESCRIPTION</description>
+	<namespace path="src">Custom\Plugin\System\Sessionguard</namespace>
+	<files>
+		<folder plugin="sessionguard">services</folder>
+		<folder>src</folder>
+	</files>
+	<media destination="plg_system_sessionguard" folder="media">
+		<filename>js/sessionguard.js</filename>
+		<filename>css/sessionguard.css</filename>
+	</media>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_system_sessionguard.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_sessionguard.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="PLG_SYSTEM_SESSIONGUARD_FIELDSET_BASIC">
+
+				<field
+					name="enable_frontend"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_ENABLE_FRONTEND_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_ENABLE_FRONTEND_DESC"
+					default="1"
+					filter="integer"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="enable_backend"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_ENABLE_BACKEND_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_ENABLE_BACKEND_DESC"
+					default="1"
+					filter="integer"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="warning_time"
+					type="number"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_WARNING_TIME_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_WARNING_TIME_DESC"
+					default="1"
+					min="1"
+					max="30"
+					filter="integer"
+				/>
+
+				<field
+					name="ui_type"
+					type="list"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_UI_TYPE_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_UI_TYPE_DESC"
+					default="modal"
+				>
+					<option value="modal">PLG_SYSTEM_SESSIONGUARD_UI_MODAL</option>
+					<option value="toast">PLG_SYSTEM_SESSIONGUARD_UI_TOAST</option>
+					<option value="banner">PLG_SYSTEM_SESSIONGUARD_UI_BANNER</option>
+				</field>
+
+				<field
+					name="warning_message"
+					type="text"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_WARNING_MESSAGE_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_WARNING_MESSAGE_DESC"
+					default=""
+					filter="string"
+				/>
+
+				<field
+					name="auto_renew"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_AUTO_RENEW_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_AUTO_RENEW_DESC"
+					default="0"
+					filter="integer"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="auto_renew_before"
+					type="number"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_AUTO_RENEW_BEFORE_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_AUTO_RENEW_BEFORE_DESC"
+					default="30"
+					min="5"
+					max="120"
+					filter="integer"
+				/>
+
+				<field
+					name="cross_tab"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_SESSIONGUARD_FIELD_CROSS_TAB_LABEL"
+					description="PLG_SYSTEM_SESSIONGUARD_FIELD_CROSS_TAB_DESC"
+					default="1"
+					filter="integer"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
