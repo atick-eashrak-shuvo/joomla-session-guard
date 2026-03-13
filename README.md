@@ -18,12 +18,12 @@ Works in **Joomla 4 / 5 / 6**.
 ## Install
 
 1. Download the installable package:
-   - `plugins/system/plg_system_sessionguard.zip`
+   - `plg_system_sessionguard.zip`
 2. In Joomla Administrator go to **System → Install → Extensions** (or **Extensions → Manage → Install**).
 3. Upload the zip and install.
 4. Go to **System → Manage → Plugins** and enable **“System - Session Guard”**.
 
-This repository **includes the installable ZIP** at `plugins/system/plg_system_sessionguard.zip` so you can install it directly without building.
+This repository **includes the installable ZIP** at `plg_system_sessionguard.zip` so you can install it directly without building.
 
 ## Configure
 

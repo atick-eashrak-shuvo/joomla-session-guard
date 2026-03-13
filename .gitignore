@@ -25,5 +25,5 @@ vendor/
 *.zip
 
 # Session Guard: keep the installable package in git
-!/plugins/system/plg_system_sessionguard.zip
+!/plg_system_sessionguard.zip
 
