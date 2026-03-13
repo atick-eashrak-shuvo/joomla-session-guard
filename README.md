@@ -23,6 +23,8 @@ Works in **Joomla 4 / 5 / 6**.
 3. Upload the zip and install.
 4. Go to **System → Manage → Plugins** and enable **“System - Session Guard”**.
 
+This repository **includes the installable ZIP** at `plugins/system/plg_system_sessionguard.zip` so you can install it directly without building.
+
 ## Configure
 
 Open **Plugins → System - Session Guard**:
