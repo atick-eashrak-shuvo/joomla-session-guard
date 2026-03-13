@@ -1,0 +1,26 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Joomla runtime folders (never commit)
+/cache/
+/tmp/
+/logs/
+
+# Environment / secrets
+.env
+.env.*
+
+# Dependency folders (if you add tooling later)
+node_modules/
+vendor/
+
+# Build artifacts (optional)
+*.zip
+
